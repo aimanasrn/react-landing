@@ -28,7 +28,7 @@ const Navbar = () => {
           {toggle ? <BsXCircle /> : <BsList />}
         </div>
 
-        <div className={`${!toggle ? "hidden" : "flex"} absolute top-20 right-1 w-[60%] h-screen bg-black/30 animation transform`}>
+        <div className={`${!toggle ? "hidden" : "flex"} absolute top-20 right-1 w-[60%] h-screen bg-black/30 sidebar`}>
           <ul className="flex-col justify-start text-start items-center">
             {navLinks.map((nav, index) => (
               <li
