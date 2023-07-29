@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <Hero />
       <div className="flex justify-center items-center">
         <button className="border p-2 rounded-xl bg-sky-600 text-white font-semibold font-poppins btn">
           Click Me

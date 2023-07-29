@@ -6,7 +6,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="flex justify-between items-center sm:px-16 px-6 py-6">
+    <div className="flex justify-between items-center sm:px-16 px-6 py-6 absolute w-full">
       <h1 className="font-poppins font-bold text-[32px]">Logo</h1>
 
       <ul className="sm:flex hidden justify-start items-center">
@@ -28,7 +28,7 @@ const Navbar = () => {
           {toggle ? <BsXCircle /> : <BsList />}
         </div>
 
-        <div className={`${!toggle ? "hidden" : "flex"} absolute top-20 right-1 w-[60%] h-screen bg-black/30 sidebar`}>
+        <div className={`${!toggle ? "hidden" : "flex"} absolute top-20 right-0 w-[60%] h-screen bg-black/50 sidebar`}>
           <ul className="flex-col justify-start text-start items-center">
             {navLinks.map((nav, index) => (
               <li
